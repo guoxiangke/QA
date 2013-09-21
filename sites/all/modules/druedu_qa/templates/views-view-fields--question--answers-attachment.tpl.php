@@ -101,9 +101,11 @@ If the variable contains markup, edit the View, go to "FORMAT", "Show:" and clic
               $variables = array(
                 'style_name' => 'profile_small',
                 'path' =>$editor->picture->uri,
-
+                'width' => 0,
+                'height' => 0,
               );
-              print theme_image_style($variables); ?>
+              print theme_image_style($variables); 
+              ?>
               <div class="commit pull-left">
                 <div class="timestamp"><span class="edit">Edited by <?php print l(format_username($editor),'user/'.$editor->uid); ?></span><span><?php print format_date($node->revision_timestamp, 'druedu_slashed_date_time'); ?> </span></div>
               </div>
@@ -111,8 +113,6 @@ If the variable contains markup, edit the View, go to "FORMAT", "Show:" and clic
             <div class="author-item q-author pull-left">
               <?php print $picture; ?>
               <div class="commit pull-left">
-<!--                 <div class="timestamp"><span class="create">Create</span><?php print $created; ?></div>
-                <div class="username"><?php print $name; ?></div> -->
 
                <div class="timestamp"><span class="create">Created by <?php print $name; ?></span><span><?php print $created; ?></span></div>
 
