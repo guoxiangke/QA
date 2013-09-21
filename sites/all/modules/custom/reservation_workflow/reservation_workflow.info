@@ -1,0 +1,17 @@
+name = Reservation workflow
+core = 7.x
+package = Booking
+php = 5.2.4
+version = 7.x-1.1-dev1
+project = reservation_workflow
+dependencies[] = reservation_content_type
+dependencies[] = workflow
+dependencies[] = workflow_rules
+features[features_api][] = api:2
+features[rules_config][] = rules_send_email_to_ask_for_approval
+features[rules_config][] = rules_send_message_to_approver
+features[rules_config][] = rules_skip_waiting_for_approval
+features[workflow][] = Booking Approval
+features_exclude[dependencies][entity] = entity
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][rules] = rules

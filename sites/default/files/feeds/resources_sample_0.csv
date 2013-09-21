@@ -1,0 +1,69 @@
+resource_name,quantity,approval,approver,resource_type,floor
+Notebook Computer,,,,Equipment,
+iPad,400,1,admin,Equipment,
+Projector,,,,Equipment,
+Potable Screen,,,,Equipment,
+DVD Player,,1,admin,Equipment,
+CD Player,,,,Equipment,
+Others (Specify in Remark),,,,Equipment,
+G16A(大堂),1,1,admin,Venue,G/F
+G16B(近操場),1,1,admin,Venue,G/F
+G16C(中),1,,,Venue,G/F
+G16D(近走廊),1,,,Venue,G/F
+G13,1,1,admin,Venue,G/F
+宗教活動中心,1,,,Venue,G/F
+學生活動中心,1,,,Venue,G/F
+Playground,1,,,Venue,G/F
+G01,1,,,Venue,G/F
+HALL,1,,,Venue,1/F
+R101,1,,,Venue,1/F
+R106,1,1,admin,Venue,1/F
+R107,1,,,Venue,1/F
+R108A,1,,,Venue,1/F
+R108B,1,,,Venue,1/F
+R108C,1,,,Venue,1/F
+R201,1,,,Venue,2/F
+R202,1,,,Venue,2/F
+R203,1,,,Venue,2/F
+R204,1,,,Venue,2/F
+R205,1,,,Venue,2/F
+R207,1,,,Venue,2/F
+ART(215),1,,,Venue,2/F
+CR (206),1,,,Venue,2/F
+MUS,1,,,Venue,2/F
+R301,1,,,Venue,3/F
+R302,1,,,Venue,3/F
+R303,1,,,Venue,3/F
+R304,1,,,Venue,3/F
+R305,1,,,Venue,3/F
+R306A,1,,,Venue,3/F
+R306B,1,,,Venue,3/F
+R307,1,,,Venue,3/F
+DT1,1,,,Venue,3/F
+DT2,1,,,Venue,3/F
+R401,1,,,Venue,4/F
+R402,1,,,Venue,4/F
+R403,1,,,Venue,4/F
+R404,1,,,Venue,4/F
+R405,1,,,Venue,4/F
+R406,1,,,Venue,4/F
+R407,1,,,Venue,4/F
+BL(414),1,,,Venue,4/F
+GR,1,,,Venue,4/F
+R501,1,,,Venue,5/F
+R502,1,,,Venue,5/F
+R503,1,,,Venue,5/F
+R504,1,,,Venue,5/F
+R507,1,,,Venue,5/F
+ISL1,1,,,Venue,5/F
+ISL2,1,,,Venue,5/F
+MMLC (5/F),1,,,Venue,5/F
+R601,1,,,Venue,6/F
+R602,1,,,Venue,6/F
+R603,1,,,Venue,6/F
+R604,1,,,Venue,6/F
+R605,1,,,Venue,6/F
+R606,1,,,Venue,6/F
+R607,1,,,Venue,6/F
+CL(612),1,,,Venue,6/F
+PL(614),1,,,Venue,6/F
