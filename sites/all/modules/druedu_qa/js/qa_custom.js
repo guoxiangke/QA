@@ -1,15 +1,22 @@
 jQuery(function($) {
 	ToggleSlide('');
-	$('#answer-node-form button[type="submit"]').attr('disabled', 'disabled');
 
- 	//Upload a file or insert on ckeditor enabled submit button
- 	$('#files_uploaded_container .insert').live('click',function(){ 
-       	$('#answer-node-form button[type="submit"]').removeAttr('disabled');
-    });
+	function CKupdate() {
+		for ( instance in CKEDITOR.instances )
+	    CKEDITOR.instances[instance].updateElement();
+	    CKEDITOR.instances[instance].setData('');
+	}
 
-   	$('#filevault_core_block').bind('fileuploaddone', function() {
-        	$('#answer-node-form button[type="submit"]').removeAttr('disabled');
-    });
+	// $('#answer-node-form button[type="submit"]').attr('disabled', 'disabled');
+
+//  	//Upload a file or insert on ckeditor enabled submit button
+//  	$('#files_uploaded_container .insert').live('click',function(){ 
+//        	$('#answer-node-form button[type="submit"]').removeAttr('disabled');
+//     });
+
+//    	$('#filevault_core_block').bind('fileuploaddone', function() {
+//         	$('#answer-node-form button[type="submit"]').removeAttr('disabled');
+//     });
 	// for ( instance in CKEDITOR.instances )
 	// 	CKEDITOR.instances[instance].on( 'blur', function( e ){
 	// 	  CKcheck(CKEDITOR.instances[instance]);
@@ -42,7 +49,8 @@ jQuery(function($) {
      attach: function (context, settings) {
 			// $('.comments-wrapper .has-comment').after('<b class="triangle_top"></b>');
 			ToggleSlide(context);
-			//CKupdate();//Always ckeditor not $('#edit-body-und-0-value').val(' ');	
+			// CKupdate();//Always ckeditor not $('#edit-body-und-0-value').val(' ');	
+			$('#answer-node-form textarea').attr('value', '');
 			var checked = false;
 
 			// for ( instance in CKEDITOR.instances )
@@ -56,7 +64,7 @@ jQuery(function($) {
 
 
 	$.fn.disableSubmitButton = function() {
-		$('#answer-node-form button[type="submit"]').attr('disabled', 'disabled');
+		// $('#answer-node-form button[type="submit"]').attr('disabled', 'disabled');
 		$('#files_uploaded_container .remove_file').each(function(){
 			$(this).click();
 		});

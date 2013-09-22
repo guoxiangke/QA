@@ -1,6 +1,7 @@
 var ua = navigator.userAgent;
 var clickEvent = (ua.match(/iPad/i)) ? "touchstart" : "click";
-$(function() {
+jQuery(function($) {
+	$(function() {
 	$('.toggle-subjects').click(function(e) {
 		e.preventDefault();
 		$('.subjects,.books').toggle(); // placeholder
@@ -195,3 +196,5 @@ $(function() {
  	}
 
 });
+});
+

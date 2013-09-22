@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
  $main_title = drupal_get_title();
- if($main_title=='QA') {//???
+ if($main_title=='Question') {//???
    $main_title = 'All Questions';
  }
  echo "<h1>$main_title</h1>";
